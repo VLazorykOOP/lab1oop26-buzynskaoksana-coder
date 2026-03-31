@@ -7,8 +7,7 @@ void task1() {
     int N;
     cout << "Enter size of array: ";
     cin >> N;
-
-    vector<int>A(N);
+    vector<int> A(N);
     cout << "Enter elements:\n";
     for (int i = 0; i < N; i++) {
         cin >> A[i];
@@ -60,9 +59,10 @@ void task2() {
     int minVal = INT_MAX;
 
     if (pos != -1) {
-        for (int i = pos + 1; i < N; i++) {
+        for (int i = 0; i < pos; i++) {
             if (A[i] < B && A[i] < minVal) {
                 minVal = A[i];
+
             }
         }
     }
